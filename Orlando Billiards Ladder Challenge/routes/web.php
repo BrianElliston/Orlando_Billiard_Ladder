@@ -15,5 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/standings', function () {
+    return view('users.standings');
+});
+
+
+
 
 Route::resource('/users', 'UserController');
+
