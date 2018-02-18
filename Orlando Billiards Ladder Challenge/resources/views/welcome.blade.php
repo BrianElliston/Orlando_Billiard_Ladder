@@ -97,15 +97,15 @@
                     <h1 id="bob">Orlando Billiard Ladder Challenge</h1>
 
                     <div class="links">
-                            <a href="https://laravel.com/docs">Contact</a>
-                            <a href="https://laracasts.com">Standings</a>
-                            <a href="https://laravel-news.com">Rules</a>
-                            <a href="https://forge.laravel.com">Sign In</a>
-                            <a href="https://github.com/laravel/laravel">Sign Up</a>
+                            <a href="http://localhost:8000/contact">Contact</a>
+                            <a href="http://localhost:8000/standings">Standings</a>
+                            <a href="http://localhost:8000/rules">Rules</a>
+                            <a href="http://localhost:8000/about">About</a>
+                            <a href="http://localhost:8000/create">Sign Up</a>
                    </div>
 
-                
-<
+                  
+
                     <img src="{{URL::asset('../images/break.jpg')}}" alt="Break Pic" height="300" width="400">
 
 

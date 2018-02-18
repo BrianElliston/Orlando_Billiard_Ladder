@@ -20,6 +20,22 @@ Route::get('/standings', function () {
 });
 
 
+Route::get('/contact', function () {
+    return view('users.contact');
+});
+
+
+Route::get('/rules', function () {
+    return view('users.rules');
+});
+
+Route::get('/create', function () {
+    return view('users.create');
+});
+
+Route::get('/about', function () {
+    return view('users.about');
+});
 
 
 Route::resource('/users', 'UserController');
