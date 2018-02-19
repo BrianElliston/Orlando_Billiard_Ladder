@@ -111,11 +111,7 @@
 
                 
 
-                <div>
-                    <h2>
-                        Are you up for the challenge?  Join Orlando's only quarterly Billiards ladder Challenge!!
-                    </h2>
-                </div>
+                
 
 
                 

@@ -17,6 +17,8 @@ function sendForm(){
 
 </script>
 
+    
+
 <div class="container">
     <div class="col-md-5">
         <div class="form-area">  

@@ -38,5 +38,7 @@ Route::get('/about', function () {
 });
 
 
+
+
 Route::resource('/users', 'UserController');
 
