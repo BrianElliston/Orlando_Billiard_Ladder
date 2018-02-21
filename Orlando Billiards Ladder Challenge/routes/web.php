@@ -29,12 +29,14 @@ Route::get('/rules', function () {
     return view('users.rules');
 });
 
-Route::get('/create', function () {
-    return view('users.create');
-});
+
 
 Route::get('/about', function () {
     return view('users.about');
+});
+
+Route::get('/users', function () {
+    return view('users.show');
 });
 
 
@@ -42,3 +44,7 @@ Route::get('/about', function () {
 
 Route::resource('/users', 'UserController');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

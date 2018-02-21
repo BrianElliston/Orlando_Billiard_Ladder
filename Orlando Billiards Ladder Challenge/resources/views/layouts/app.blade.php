@@ -1,15 +1,4 @@
 <!doctype html>
-<html lang="{{ app()->getLocale() }}">
-   
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Orlando Billiard Ladder Challenge</title>
-
-   
- 
-            <!doctype html>
             <html lang="{{ app()->getLocale() }}">
                 <head>
                     <meta charset="utf-8">
@@ -17,6 +6,10 @@
                     <meta name="viewport" content="width=device-width, initial-scale=1">
             
                     <title>Orlando Billiard Ladder Challenge</title>
+
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
             
             
                     <!-- Fonts -->
@@ -29,6 +22,7 @@
             
                         #bob{
                             color:aquamarine;
+                            
                         }
             
                        
@@ -55,8 +49,15 @@
             
                         .top-right {
                             position: absolute;
-                            right: 10px;
-                            top: 18px;
+                            right: 40px;
+                            top: 50px;
+                            color: red;
+                            padding: 0 25px;
+                            font-size: 12px;
+                            font-weight: 600;
+                            letter-spacing: .1rem;
+                            text-decoration: none;
+                            text-transform: uppercase;
                         }
             
                         .content {
@@ -82,6 +83,44 @@
                         }
             
             
+                        .table {
+
+                            font-size: 30px;
+                        }
+
+                        #cont{
+                            color:red;
+                            font-size: 20px;
+
+                        }
+
+                        #sally{
+                            position: absolute;
+                            left: 40px;
+                            top: 18px;
+                            color: red;
+                            padding: 0 25px;
+                            font-size: 12px;
+                            font-weight: 600;
+                            letter-spacing: .1rem;
+                            text-decoration: none;
+                            text-transform: uppercase;
+
+                        }
+
+                        #house{
+                            position: absolute;
+                            right: 40px;
+                            top: -130px;
+                            color: red;
+                            padding: 0 25px;
+                            font-size: 12px;
+                            font-weight: 600;
+                            letter-spacing: .1rem;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            
+                        }
             
                        
                     </style>
@@ -94,29 +133,50 @@
             
             
                     
-                    <div class="flex-center position-ref full-height">
-                        @if (Route::has('login'))
-                            <div class="top-right links">
-                                @auth
-                                    <a href="{{ url('/home') }}">Home</a>
-                                @else
-                                    <a href="{{ route('login') }}">Login</a>
-                                    <a href="{{ route('register') }}">Register</a>
-                                @endauth
+                    <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+                        <div class="container">
+                           
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <!-- Left Side Of Navbar -->
+                                <ul class="navbar-nav mr-auto">
+                                </ul>
+                                <!-- Right Side Of Navbar -->
+                                <ul class="navbar-nav ml-auto">
+                                    <!-- Authentication Links -->
+                                    @guest
+                                        <li><a class="nav-link" href="{{ route('login') }}">Login</a></li>
+                                        <li><a class="nav-link" href="{{ route('register') }}">Register</a></li>
+                                    @else
+                                        <div id="sally" class="nav-item dropdown">
+
+                                            <a id="sally" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Logout <span class=""></span>
+                                            </a>
+                                            <div id="sally" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                                   onclick="event.preventDefault();
+                                                                 document.getElementById('logout-form').submit();">
+                                                    Are you sure you want to logout?
+                                                </a>
+                                                <form  id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                    @csrf  
+                                                </form>
+                                                
+                                            </div>
+                                        </div>
+                                    @endguest
+                                </ul>
                             </div>
-                        @endif
+                        </div>
+                    </nav>
+            
+            
             
                         <div class="content">
             
                                 <h1 id="bob">Orlando Billiard Ladder Challenge</h1>
             
-                                <div class="links">
-                                        <a href="http://localhost:8000/contact">Contact</a>
-                                        <a href="http://localhost:8000/standings">Standings</a>
-                                        <a href="http://localhost:8000/rules">Rules</a>
-                                        <a href="http://localhost:8000/about">About</a>
-                                        <a href="http://localhost:8000/create">Sign Up</a>
-                               </div>
+                             
             
                           @yield("content")  
             
@@ -125,6 +185,10 @@
                         </div>
                     </div>
              
+                 
         
+
+                    <!-- Scripts -->
+                    <script src="{{ asset('js/app.js') }}"></script>
     </body>
 

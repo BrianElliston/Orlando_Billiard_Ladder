@@ -6,15 +6,18 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  {{--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  --}}
 </head>
 <body>
 
 <div class="container">
+
+    <a class="top-right links" href="{{ url('/home') }}">Home</a>
+
   <h2>Current Standings</h2>
-  <p>Please contact administrator if you don't think the standings are correct or believe they should be updated.</p>                        
+  <p id="cont">Please contact administrator if you don't think the standings are correct or believe they should be updated.</p>                        
   <table class="table table-bordered">
     <thead>
       <tr>
@@ -37,11 +40,11 @@
       </tr>
       <tr>
         <td>4th</td>
-        <td>Bob</td>
+        <td>Samuel</td>
       </tr>
       <tr>
         <td>5th</td>
-        <td>Samuel</td>
+        <td>Bob</td>
       </tr>
       <tr>
         <td>6th</td>

@@ -18,6 +18,8 @@
     }
 </style>
 
+<a class="top-right links" href="{{ url('/home') }}">Home</a>
+
 <h4 class="desc">The challenge will start with random computer generated results.  Once the initial results are set, any player that is below another player on the ladder may challenge any player on the next rung above them on the ladder.  Contact can be made in person or by phone or email.  Email will be the official means of contact.  Players should be as flexible as possible to arrange an agreed meeting time to play a match.  All players agree to meet for the match within one week of being challenged OR players MUST meet on the first Saturday at Trick Shots Metro West at 6 p.m. following the initial week of the challenge.  If the challenged player can not arrange a time and place to play during the first week or up to the first Saturday following then they must meet Saturday or the challenge will be awarded to the player that requested the challenge by forfeit. </h4>
 
 

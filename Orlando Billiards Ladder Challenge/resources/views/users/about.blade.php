@@ -1,6 +1,8 @@
 @extends('layouts.app')
 @section('content')
 
+<a class="top-right links" href="{{ url('/home') }}">Home</a>
+
 <h1>Welcome to Orlando Billiard Ladder Challenge!!</h1>
 
 <br>

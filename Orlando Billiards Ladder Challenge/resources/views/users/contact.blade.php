@@ -20,6 +20,9 @@ function sendForm(){
     
 
 <div class="container">
+
+        <a class="top-right links" href="{{ url('/home') }}">Home</a>
+
     <div class="col-md-5">
         <div class="form-area">  
             <form id="form" role="form">
@@ -41,6 +44,7 @@ function sendForm(){
                         </div>
                 
             <button type="button" id="submit" name="submit" class="btn btn-primary pull-right"  onclick="sendForm()">Submit Form</button>
+            @csrf
             </form>
         </div>
     </div>

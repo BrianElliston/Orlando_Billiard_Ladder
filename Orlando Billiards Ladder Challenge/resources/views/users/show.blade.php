@@ -1,5 +1,8 @@
 @extends('layouts.app')
 @section('content')
+
+<a class="top-right links" href="{{ url('/home') }}">Home</a>
+
 <h1> Details for  {{$user->name}}</h1>
 <hr>
 <ul class='list-group'>

@@ -1,6 +1,9 @@
 @extends('layouts.app')
 @section('content')
 <div class="container">
+
+    <a href="{{ url('/home') }}">Home</a>
+
 <h1>Edit User: {{$user->name}}</h1>
 
 <form method="post" action="/users/{{$user->id}}">
