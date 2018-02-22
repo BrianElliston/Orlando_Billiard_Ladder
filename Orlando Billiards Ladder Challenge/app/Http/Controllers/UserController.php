@@ -95,4 +95,10 @@ class UserController extends Controller
     {
         //
     }
+
+    public function delete($id)
+    {
+        DB::table('user')->where('userID', '=', $id)->delete();
+        return redirect('userAdmin');
+    }
 }
