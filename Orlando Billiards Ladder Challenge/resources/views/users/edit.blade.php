@@ -10,16 +10,25 @@
     {{ csrf_field() }}
     {{method_field('PATCH')}}
     <div class="form-group">
-      <label for="name">Change Name</label>
+      <label for="name"></label>
       <input name="name" type="text" class="form-control" id="name" placeholder="Enter New Name">
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1">email</label>
+      <label for="exampleInputPassword1"></label>
       <input name="email" type="email" class="form-control" id="email" placeholder="Email">
     </div>
+   
     
    
     <button type="submit" class="btn btn-default">Submit</button>
+   
   </form>
+
+  <form method='POST' action="/users/{{$user->id}}">
+    {{ method_field('DELETE') }}
+    {{ csrf_field() }}
+    <input type="submit" value="Delete" class="btn btn-danger btn-block" onclick="return confirm('Are you sure to delete?')">       
+ </form>
+
 </div>
   @stop

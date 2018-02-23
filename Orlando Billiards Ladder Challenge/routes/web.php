@@ -26,7 +26,7 @@ Route::get('/contact', function () {
 
 
 Route::get('/rules', function () {
-    return view('users.rules');
+    return view('users.rulestest');
 });
 
 
@@ -35,9 +35,9 @@ Route::get('/about', function () {
     return view('users.about');
 });
 
-Route::get('/users', function () {
-    return view('users.show');
-});
+// Route::get('/users', function () {
+//     return view('users.show');
+// });
 
 
 
