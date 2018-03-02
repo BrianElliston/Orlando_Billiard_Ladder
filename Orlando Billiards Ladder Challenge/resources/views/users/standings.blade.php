@@ -19,6 +19,7 @@
   <h2>Current Standings</h2>
   <p id="cont">Please contact administrator if you don't think the standings are correct or believe they should be updated.</p>                        
   <table class="table table-bordered">
+  
     <thead>
       <tr>
         <th>#</th>

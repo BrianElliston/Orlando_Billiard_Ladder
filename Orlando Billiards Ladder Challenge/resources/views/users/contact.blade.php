@@ -11,8 +11,15 @@
    })();
 
 function sendForm(){
-    console.log("Send Form Button Working")
+    console.log("Send Form Button Working");
     emailjs.sendForm("default_service","contact","form");
+    setTimeout(redirect, 500);
+}
+
+
+
+function redirect() {
+    document.location.href = '/home';
 }
 
 </script>
@@ -44,6 +51,9 @@ function sendForm(){
                         </div>
                 
             <button type="button" id="submit" name="submit" class="btn btn-primary pull-right"  onclick="sendForm()">Submit Form</button>
+
+           
+
             @csrf
             </form>
         </div>

@@ -2,7 +2,7 @@
 @section('content')
 <div class="container">
 
-    <a href="{{ url('/home') }}">Home</a>
+    <a class="top-right links" href="{{ url('/home') }}">Home</a>
 
 <h1>Edit User: {{$user->name}}</h1>
 
@@ -27,7 +27,7 @@
   <form method='POST' action="/users/{{$user->id}}">
     {{ method_field('DELETE') }}
     {{ csrf_field() }}
-    <input type="submit" value="Delete" class="btn btn-danger btn-block" onclick="return confirm('Are you sure to delete?')">       
+    <input type="submit" value="Delete" class="btn" onclick="return confirm('Are you sure to delete player?')">       
  </form>
 
 </div>
