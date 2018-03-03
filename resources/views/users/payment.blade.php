@@ -7,12 +7,16 @@
 
 .money{
 
-    color:blue;   
+    color:burlywood;   
 }
 
 </style>
 
-<h1 class="money">$$$$$$$$$$$$$$$$</h1>
+<a class="money" href="https://www.paypal.me/BilliardLadder/10"><h1>Make Payment</h1></a>
+
+<img src="{{URL::asset('../images/poolMoney.jpeg')}}" alt="Break Pic" height="200" width="400">
+
+
 
 
 @stop   

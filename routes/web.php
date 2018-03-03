@@ -44,6 +44,10 @@ Route::get('/payment', function () {
     return view('users.payment');
 });
 
+Route::get('/payment', function () {
+    return view('users.payment');
+});
+
 
 Route::resource('/users', 'UserController');
 

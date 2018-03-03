@@ -21,7 +21,7 @@
                     <style>
             
                         #bob{
-                            color:aquamarine;
+                            color:aqua;
                             
                         }
             

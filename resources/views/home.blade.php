@@ -21,6 +21,7 @@
                             <a href="http://localhost:8000/standings">Standings</a>
                             <a href="http://localhost:8000/users">Players</a>
                             <a href="http://localhost:8000/contact">Contact</a>
+                            <a href="http://localhost:8000/payment">Payment</a>
                 </div>
 
                     <img src="{{URL::asset('../images/break.jpg')}}" alt="Break Pic" height="400" width="600">

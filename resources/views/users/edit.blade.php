@@ -24,10 +24,12 @@
    
   </form>
 
+  <br>
+
   <form method='POST' action="/users/{{$user->id}}">
     {{ method_field('DELETE') }}
     {{ csrf_field() }}
-    <input type="submit" value="Delete" class="btn" onclick="return confirm('Are you sure to delete player?')">       
+    <input type="submit" value="Delete Player" class="btn" onclick="return confirm('Are you sure to delete player?')">       
  </form>
 
 </div>
