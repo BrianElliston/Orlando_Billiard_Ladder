@@ -1,7 +1,29 @@
 @extends('layouts.app')
 @section('content')
 
+<style>
 
+#stand{
+
+color:aqua; 
+
+}
+
+#bobby{
+
+color:red;
+text-align: center;
+
+}
+
+#sarah{
+
+color:aqua;
+
+}
+
+
+</style>
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,97 +38,78 @@
 
     <a class="top-right links" href="{{ url('/home') }}">Home</a>
 
-  <h2>Current Standings</h2>
+  <h2 id="stand">Current Standings</h2>
   <p id="cont">Please contact administrator if you don't think the standings are correct or believe they should be updated.</p>                        
-  <table class="table table-bordered">
+  <table id="sarah" class="table table-bordered">
   
     <thead>
       <tr>
-        <th>#</th>
-        <th>Firstname</th>
+        <th id="bobby">#</th>
+        <th id="bobby">Firstname</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody id="bobby">
       <tr>
-        <td>King Of The Hill</td>
+        <td><img src="{{URL::asset('../images/1ball.jpeg')}}" alt="Break Pic" height="50" width="50"></td>
         <td>Anna</td>
       </tr>
       <tr>
-        <td>2nd</td>
+        <td><img src="{{URL::asset('../images/2ball.jpeg')}}" alt="Break Pic" height="50" width="50"></td>
         <td>Debbie</td>
       </tr>
       <tr>
-        <td>3rd</td>
+        <td><img src="{{URL::asset('../images/3ball.jpeg')}}" alt="Break Pic" height="55" width="55"></td>
         <td>John</td>
       </tr>
       <tr>
-        <td>4th</td>
+        <td><img src="{{URL::asset('../images/4ball.png')}}" alt="Break Pic" height="55" width="55"></td>
         <td>Samuel</td>
       </tr>
       <tr>
-        <td>5th</td>
+        <td><img src="{{URL::asset('../images/5ball.jpeg')}}" alt="Break Pic" height="55" width="55"></td>
         <td>Bob</td>
       </tr>
       <tr>
-        <td>6th</td>
+        <td><img src="{{URL::asset('../images/6ball.jpeg')}}" alt="Break Pic" height="55" width="55"></td>
         <td>Max</td>
       </tr>
       <tr>
-        <td>7th</td>
+        <td><img src="{{URL::asset('../images/7ball.jpeg')}}" alt="Break Pic" height="55" width="55"></td>
         <td>Larry</td>
       </tr>
       <tr>
-        <td>8th</td>
+        <td><img src="{{URL::asset('../images/8ball.jpeg')}}" alt="Break Pic" height="55" width="55"></td>
         <td>Jason</td>
       </tr>
       <tr>
-        <td>9th</td>
+        <td><img src="{{URL::asset('../images/9ball.jpeg')}}" alt="Break Pic" height="55" width="55"></td>
         <td>Tina</td>
       </tr>
       <tr>
-        <td>10th</td>
+        <td><img src="{{URL::asset('../images/10ball.jpeg')}}" alt="Break Pic" height="55" width="55"></td>
         <td>Chad</td>
       </tr>
       <tr>
-        <td>11th</td>
+        <td><img src="{{URL::asset('../images/11ball.jpeg')}}" alt="Break Pic" height="55" width="55"></td>
         <td>Jimmy</td>
       </tr>
       <tr>
-        <td>12th</td>
+        <td><img src="{{URL::asset('../images/12ball.jpeg')}}" alt="Break Pic" height="55" width="55"></td>
         <td>Luke</td>
       </tr>
       <tr>
-        <td>13th</td>
+        <td><img src="{{URL::asset('../images/13ball.jpeg')}}" alt="Break Pic" height="55" width="55"></td>
         <td>Jude</td>
       </tr>
       <tr>
-        <td>14th</td>
+        <td><img src="{{URL::asset('../images/14ball.jpeg')}}" alt="Break Pic" height="55" width="55"></td>
         <td>Jason</td>
       </tr>
       <tr>
-        <td>15th</td>
+        <td><img src="{{URL::asset('../images/15ball.jpeg')}}" alt="Break Pic" height="55" width="55"></td>
         <td>Billy</td>
       </tr>
-      <tr>
-        <td>16th</td>
-        <td>Rebecca</td>
-      </tr>
-      <tr>
-        <td>17th</td>
-        <td>Juan</td>
-      </tr>
-      <tr>
-        <td>18th</td>
-        <td>Ahmed</td>
-      </tr>
-      <tr>
-        <td>19th</td>
-        <td>Christy</td>
-      </tr>
-      <tr>
-        <td>20th</td>
-        <td>Tamara</td>
-      </tr>
+      
       
 
     </tbody>
