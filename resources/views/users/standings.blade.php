@@ -49,68 +49,20 @@ color:aqua;
       </tr>
     </thead>
     <tbody id="bobby">
-      <tr>
-        <td><img src="{{URL::asset('../images/1ball.jpeg')}}" alt="Break Pic" height="50" width="50"></td>
-        <td>Anna</td>
-      </tr>
-      <tr>
-        <td><img src="{{URL::asset('../images/2ball.jpeg')}}" alt="Break Pic" height="50" width="50"></td>
-        <td>Debbie</td>
-      </tr>
-      <tr>
-        <td><img src="{{URL::asset('../images/3ball.jpeg')}}" alt="Break Pic" height="55" width="55"></td>
-        <td>John</td>
-      </tr>
-      <tr>
-        <td><img src="{{URL::asset('../images/4ball.png')}}" alt="Break Pic" height="55" width="55"></td>
-        <td>Samuel</td>
-      </tr>
-      <tr>
-        <td><img src="{{URL::asset('../images/5ball.jpeg')}}" alt="Break Pic" height="55" width="55"></td>
-        <td>Bob</td>
-      </tr>
-      <tr>
-        <td><img src="{{URL::asset('../images/6ball.jpeg')}}" alt="Break Pic" height="55" width="55"></td>
-        <td>Max</td>
-      </tr>
-      <tr>
-        <td><img src="{{URL::asset('../images/7ball.jpeg')}}" alt="Break Pic" height="55" width="55"></td>
-        <td>Larry</td>
-      </tr>
-      <tr>
-        <td><img src="{{URL::asset('../images/8ball.jpeg')}}" alt="Break Pic" height="55" width="55"></td>
-        <td>Jason</td>
-      </tr>
-      <tr>
-        <td><img src="{{URL::asset('../images/9ball.jpeg')}}" alt="Break Pic" height="55" width="55"></td>
-        <td>Tina</td>
-      </tr>
-      <tr>
-        <td><img src="{{URL::asset('../images/10ball.jpeg')}}" alt="Break Pic" height="55" width="55"></td>
-        <td>Chad</td>
-      </tr>
-      <tr>
-        <td><img src="{{URL::asset('../images/11ball.jpeg')}}" alt="Break Pic" height="55" width="55"></td>
-        <td>Jimmy</td>
-      </tr>
-      <tr>
-        <td><img src="{{URL::asset('../images/12ball.jpeg')}}" alt="Break Pic" height="55" width="55"></td>
-        <td>Luke</td>
-      </tr>
-      <tr>
-        <td><img src="{{URL::asset('../images/13ball.jpeg')}}" alt="Break Pic" height="55" width="55"></td>
-        <td>Jude</td>
-      </tr>
-      <tr>
-        <td><img src="{{URL::asset('../images/14ball.jpeg')}}" alt="Break Pic" height="55" width="55"></td>
-        <td>Jason</td>
-      </tr>
-      <tr>
-        <td><img src="{{URL::asset('../images/15ball.jpeg')}}" alt="Break Pic" height="55" width="55"></td>
-        <td>Billy</td>
-      </tr>
-      
-      
+
+     <?php $ranking = 1 ?>
+
+        @foreach ($users as $user)
+        <tr>
+            <td><img src="{{URL::asset('../images/'.$ranking.'ball.jpeg')}}" alt="Break Pic" height="50" width="50"></td>
+            <td><a href="/users/{{$user->id}}">{{$user->name}}</a></td>
+          </tr>
+
+          <?php $ranking++?>
+
+        @endforeach
+       
+ 
 
     </tbody>
   </table>

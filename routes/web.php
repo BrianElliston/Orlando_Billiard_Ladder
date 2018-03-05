@@ -11,13 +11,22 @@
 |
 */
 
+class Standings extends Eloquent {
+    protected $table = "users";
+}
+
 Route::get('/', function () {
     return view('welcome');
 });
 
+// Route::get('/standings', function () {
+//     return view('users.standings');
+// });
+
 Route::get('/standings', function () {
-    return view('users.standings');
+    return View::make('users.standings')->with('users', Standings::all());
 });
+
 
 
 Route::get('/contact', function () {
@@ -44,9 +53,7 @@ Route::get('/payment', function () {
     return view('users.payment');
 });
 
-Route::get('/payment', function () {
-    return view('users.payment');
-});
+
 
 
 Route::resource('/users', 'UserController');

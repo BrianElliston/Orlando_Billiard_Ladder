@@ -19,7 +19,7 @@
                             <a href="http://localhost:8000/about">About</a>
                             <a href="http://localhost:8000/rules">Rules</a>
                             <a href="http://localhost:8000/standings">Standings</a>
-                            <a href="http://localhost:8000/users">Players</a>
+                            {{--  <a href="http://localhost:8000/users">Players</a>  --}}
                             <a href="http://localhost:8000/contact">Contact</a>
                             <a href="http://localhost:8000/payment">Payment</a>
                 </div>
