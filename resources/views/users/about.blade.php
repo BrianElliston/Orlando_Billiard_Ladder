@@ -35,7 +35,7 @@ color:red;
 
 <img id="shark" src="{{URL::asset('../images/poolShark.jpeg')}}" alt="Break Pic" height="350" width="400">
 
-<h2 class="about">The Orlando Billiard Ladder Challenge is a quarterly ladder tournament in Orlando, Fl.  The challenge is open to the first 20 players that sign up (sign up begins one month before challenge start date).</h2>
+<h2 class="about">The Orlando Billiard Ladder Challenge is a quarterly ladder tournament in Orlando, Fl.  The challenge is open to the first 15 players that sign up (sign up begins one month before challenge start date).</h2>
 
 <h2 class="about">There is a ten dollar entry fee and each match costs the challenger ten dollars.</h2>
 
