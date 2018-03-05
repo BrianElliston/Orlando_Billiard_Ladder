@@ -44,8 +44,8 @@ color:aqua;
   
     <thead>
       <tr>
-        <th id="bobby">#</th>
-        <th id="bobby">Firstname</th>
+        <th id="bobby">RANK</th>
+        <th id="bobby">NAME</th>
       </tr>
     </thead>
     <tbody id="bobby">
